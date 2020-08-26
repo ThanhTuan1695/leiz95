@@ -34,9 +34,9 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
+  email: "tuan.it.1695@gmail.com"
+  facebook: Tuantran
+  github: ThanhTuan1695
   twitter: daattali
 #  reddit: yourname
 #  linkedin: daattali
@@ -67,7 +67,6 @@ share-links-active:
   twitter: true
   facebook: true
   linkedin: true
-  vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
