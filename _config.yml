@@ -1,19 +1,19 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: Leiz95's Blog
 
 # Your name to show in the footer
-author: Some Person
+author: Leiz95
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+#  Resources:
+#    - Beautiful Jekyll: "https://beautifuljekyll.com"
+#    - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://www.linkedin.com/in/tran-tuan-641894117/"
 
 # --- Logo --- #
 
