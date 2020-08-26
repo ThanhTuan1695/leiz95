@@ -96,16 +96,16 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
+navbar-img: "/assets/img/bgimage.png"
+footer-img: "/assets/img/bgimage.png"
+page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
 #mobile-theme-col: "#0085A1"
 
 # For any extra customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 #site-css:
-#  - "/assets/css/custom-styles.css"
+  - "/assets/css/custom-styles.css"
 
 # --- Web Analytics Section --- #
 
