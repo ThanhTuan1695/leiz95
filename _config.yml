@@ -1,19 +1,19 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: Leis95's Blog
 
 # Your name to show in the footer
-author: Some Person
+author: Leiz95
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    # - Beautiful Jekyll: "https://beautifuljekyll.com"
+    # - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: ""
 
 # --- Logo --- #
 
@@ -34,12 +34,12 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
+  email: "tuan.it.1695@gmail.com"
+  facebook: leiz95
+  github: ThanhTuan1695
+  twitter: trantua59025817
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: tran-tuan-641894117
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -58,7 +58,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: This is my blog, I will noted all thing relate to security here.
 
 # --- General options --- #
 
@@ -67,11 +67,11 @@ share-links-active:
   twitter: true
   facebook: true
   linkedin: true
-  vk: false
+  # vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+# url-pretty: "MyWebsite.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
