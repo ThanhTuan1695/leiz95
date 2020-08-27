@@ -1,16 +1,19 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Penetration tester,  Security Consultant and Researching
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Tuan Tran. I have the following qualities:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I have good knowleged about security
+- I'm extremely love research and sharing about security
 
 What else do you need?
 
-### My story
+### My Purpose 
+- Getting high rank in tryhackme
+- Get some certificate relate to security field.
+- I am on the way to get OSCP certificate.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+ - if you have any question, i will answer **all** your questions.
