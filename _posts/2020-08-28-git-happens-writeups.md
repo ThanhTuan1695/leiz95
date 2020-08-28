@@ -2,7 +2,7 @@
 layout: post
 title: Git Happens Writeup
 subtitle: Can you find the password to the application?
-thumbnail-img: https://assets.tryhackme.com/img/banners/default_tryhackme.png
+thumbnail-img: https://assets.tryhackme.com/img/THMlogo.png
 # cover-img: 
 # gh-badge: [star, fork, follow]
 tags: [ctf,tryhackme, writeup, git]
