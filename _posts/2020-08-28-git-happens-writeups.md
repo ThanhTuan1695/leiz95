@@ -2,8 +2,8 @@
 layout: post
 title: Git Happens Writeup
 subtitle: Can you find the password to the application?
-thumbnail-img: /assets/img/post/githappens.png
-cover-img: https://assets.tryhackme.com/img/banners/default_tryhackme.png
+thumbnail-img: https://tryhackme-images.s3.amazonaws.com/room-icons/3bbde0f7b1df2e2ee61206ae6b3cd9b2.png
+# cover-img: https://assets.tryhackme.com/img/banners/default_tryhackme.png
 # gh-badge: [star, fork, follow]
 tags: [ctf,tryhackme, writeup, git]
 # comments: true
@@ -59,7 +59,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 i tryed to access the .git directory via *http://machine-ip/.git*
 
-![.git directory](/assets/img/post/.git.png)
+![.git directory](/assets/img/.git.png)
 
 In order to get the contents of the directory, I used this.
 My favorite search engine is [GitTool](https://github.com/internetwache/GitTools)
@@ -76,7 +76,7 @@ Then  extract it.
 ```
 After finish all the dump and extract. i got this.
 
-![extractor](/assets/img/post/extract.png)
+![extractor](/assets/img/extract.png)
 
 In order to get all the files in the previous commits, we run this command
 
@@ -85,7 +85,7 @@ git checkout .
 ```
 we got all files: 
 
-![extractor](/assets/img/post/extractall.png)
+![extractor](/assets/img/extractall.png)
 
 ## Getting the password 
 
@@ -94,7 +94,7 @@ Nomally, when we have the git file. we should run cmd
 ```bash
 git log
 ```
-![gitlog](/assets/img/post/gitlog.png)
+![gitlog](/assets/img/gitlog.png)
 
 We can go through all the modification file by run:
 
@@ -105,7 +105,7 @@ We can see all the file change in this commit.
 We go through all commit with this command. 
 in the ***e56eaa8e29b589976f33d76bc58a0c4dfb9315b1*** object. 
  
-![result](/assets/img/post/result.png)
+![result](/assets/img/result.png)
 
 Yeah, we got the password now !!!!
 
