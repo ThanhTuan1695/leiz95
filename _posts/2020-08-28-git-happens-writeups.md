@@ -2,7 +2,7 @@
 layout: post
 title: Git Happens Writeup
 subtitle: Can you find the password to the application?
-thumbnail-img: /leiz95/assets/img/githappenslogo.png
+thumbnail-img: /assets/img/githappenslogo.png
 # cover-img: 
 # gh-badge: [star, fork, follow]
 tags: [ctf,tryhackme, writeup, git]
@@ -59,7 +59,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 i tryed to access the .git directory via *http://machine-ip/.git*
 
-![.git directory](/leiz95/assets/img/.git.png)
+![.git directory](/leiz95/assets/img/git.png)
 
 In order to get the contents of the directory, I used this.
 My favorite search engine is [GitTool](https://github.com/internetwache/GitTools)
@@ -105,7 +105,7 @@ We can see all the file change in this commit.
 We go through all commit with this command. 
 in the ***e56eaa8e29b589976f33d76bc58a0c4dfb9315b1*** object. 
  
-![result](/assets/img/result.png)
+![result](/leiz95/assets/img/result.png)
 
 Yeah, we got the password now !!!!
 
