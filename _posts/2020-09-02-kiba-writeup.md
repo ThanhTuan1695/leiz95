@@ -48,7 +48,9 @@ There is the vulnerability as remote code executed in this version.
 ![kibana](/leiz95/assets/img/kiba/vulnerability.png)
 
 From the CVE-2019-7609, we can use 2 source from here:
-by manual: https://github.com/mpgn/CVE-2019-7609
+
+By manual: https://github.com/mpgn/CVE-2019-7609 and this is detail explanation why have this issue: https://research.securitum.com/prototype-pollution-rce-kibana-cve-2019-7609/
+
 By auto code: https://github.com/LandGrey/CVE-2019-7609
 
 I will use auto code try to exploit. Clone the code from github
