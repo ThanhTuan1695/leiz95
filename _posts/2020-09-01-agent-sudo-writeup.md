@@ -40,7 +40,7 @@ After finishing scan with nmap, we got the result as tcp (80) is open and more i
 
 ```bash
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-08-26 03:01 EDT
-Nmap scan report for 10.10.81.255
+Nmap scan report for 10.10.100.203
 Host is up (0.24s latency).
 Not shown: 997 closed ports
 PORT   STATE SERVICE VERSION
@@ -78,10 +78,12 @@ In */agent_C_attention.php*
 
 ![web80](/leiz95/assets/img/agent-sudo/web2.png)
 
+## Hash cracking and brute-force
+
 Now we have the user is **chris**. As we saw the ftp open in our nmap. We try brute force password for **chris** via hydra:
 
 ```
-hydra -l chris -P password-list 10.10.81.255 ftp
+hydra -l chris -P password-list 10.10.10.203 ftp
 ```
 <em>
 
@@ -119,3 +121,85 @@ From,
 Agent C
 
 ```
+Firstly, i can try steghide to check the jpg image. let see what is hide inside image.
+
+``` steghide info cute-alien.jpg```
+
+Result: 
+
+![web80](/leiz95/assets/img/agent-sudo/web5.png)
+
+This require password phrase as saw above.
+Let's check cutie.png with binwalk. We got some hidden zip file inside file cuite.png
+
+![web80](/leiz95/assets/img/agent-sudo/web6.png)
+
+Extract the cutie.pnd and got 8702.zip file. But it was lockded by password. We need to crack password. After googling how to crack password for zip file.
+
+I get amount of way. One way that i will use and also from the hint. There is two steps to crack it.
+
+``` zip2john 8702.zip > zip.hash```
+
+``` john zip.hash ```
+
+Then archive the password:
+
+![web80](/leiz95/assets/img/agent-sudo/web7.png)
+
+Open zip file and enter password. We have message: 
+
+![web80](/leiz95/assets/img/agent-sudo/web8.png)
+
+Send to who we just got the encode person. Don't worry, we have the https://gchq.github.io/CyberChef/ to check or reverse it. After time to find what is type of encoded. I found this is base64 encoded. 
+
+Now we have password for steghide in a few steps ago. Let's extract jpg image.
+
+``` steghide --extract -sf cute-alien.jpg```
+
+Inside message.txt:
+
+![web80](/leiz95/assets/img/agent-sudo/web9.png)
+
+## Capture the user flag
+
+Now we have the credentials to access the attack machine. Let's using ssh to access:
+
+``` ssh user@machine-ip ```
+
+Using cat to get flag.
+
+``` cat user_flag.txt ```
+
+
+And the other is an image. We need to find out where is the image from. You can use the command below to download the image from the machine 
+
+``` scp user@machine-ip:filename /localdir/ ```
+
+Downloaded successfully, 
+
+## Privilege escalation
+
+In order to getting root. First thing, i check sudoer file by running command:
+
+``` sudo -l ```
+
+![web80](/leiz95/assets/img/agent-sudo/web10.png)
+
+
+It looks like our user is not allowed to run /bin/bash as root since we have a !root. However, this looks weird as the first all means our user can run /bin/bash as any user. This is interesting, perhaps we can find a way to exploit this. 
+
+Google about it: 
+
+![web80](/leiz95/assets/img/agent-sudo/web11.png)
+
+We got the cve and also exploitdb url.
+
+Read throung the exploitDB and Run cmd to get root:
+
+``` sudo -u#-1 /bin/bash ```
+
+The flag was sitting inside root directory.
+
+![web80](/leiz95/assets/img/agent-sudo/web12.png)
+
+Finally we got all plags. Happy hacking!!!
