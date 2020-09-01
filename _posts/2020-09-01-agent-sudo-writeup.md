@@ -3,9 +3,9 @@ layout: post
 title: Agent sudo writeup
 subtitle: You found a secret server located under the deep sea.
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
+thumbnail-img: /assets/img/agent-sudo/editlogo.png
 share-img: /assets/img/path.jpg
-tags: [ctf,tryhackme, writeup, enumeration]
+tags: [ctf,tryhackme, writeup, agentsudo]
 ---
 
 Welcome to another THM exclusive CTF room. Your task is simple, capture the flags just like the other CTF room. Have Fun!
