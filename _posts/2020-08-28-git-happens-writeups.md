@@ -76,7 +76,7 @@ Then  extract it.
 ```
 After finish all the dump and extract. i got this.
 
-![extractor](/img/extract.png)
+![extractor](/assets/img/extract.png)
 
 In order to get all the files in the previous commits, we run this command
 

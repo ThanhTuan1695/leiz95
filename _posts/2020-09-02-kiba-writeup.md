@@ -33,11 +33,11 @@ Normally, i will use the nmap for first step recon and also collect machine info
 
 It will take few time to scan: 
 
-![rustscan](/leiz95/assets/img/kiba/rustscan.png)
+![rustscan](/assets/img/kiba/rustscan.png)
 
 We got 3 open ports. Go through each port. In port 5601, this is the kibana application.
 
-![kibana](/leiz95/assets/img/kiba/5601.png)
+![kibana](/assets/img/kiba/5601.png)
 
 Kibana is a free and open user interface that lets you visualize your Elasticsearch data and navigate the Elastic Stack. Do anything from tracking query load to understanding the way requests flow through your apps.
 
@@ -45,7 +45,7 @@ We can manual go throung all tag in the kibana. We got version 6.5.4.
 Let's google the version which have any public vulnerability.
 There is the vulnerability as remote code executed in this version.
 
-![kibana](/leiz95/assets/img/kiba/vulnerability.png)
+![kibana](/assets/img/kiba/vulnerability.png)
 
 From the CVE-2019-7609, we can use 2 source from here:
 
@@ -63,15 +63,15 @@ Exploit by run command:
 
 At your attacker machine, we need to listen the port 1234
 
-![nc](/leiz95/assets/img/kiba/nc.png)
+![nc](/assets/img/kiba/nc.png)
 
 Then wait for shell connect
 
-![shell](/leiz95/assets/img/kiba/shell.png)
+![shell](/assets/img/kiba/shell.png)
 
 From kibana home directory, we have the user flag.
 
-![shell](/leiz95/assets/img/kiba/user.png)
+![shell](/assets/img/kiba/user.png)
 
 ## 	Escalate privileges 
 
@@ -96,7 +96,7 @@ Run this command on target machine, you will see a lot of error. To ignore error
 
 ```getcap -r / 2>/dev/null```
 
-![shell](/leiz95/assets/img/kiba/result.png)
+![shell](/assets/img/kiba/result.png)
 
 The thing realy interesting is: `/home/kiba/.hackmeplease/python3 = cap_setuid+ep
 `
@@ -111,7 +111,7 @@ From https://gtfobins.github.io/gtfobins/python/#capabilities we have available 
 
  Yeahm, we got root user.
 
- ![shell](/leiz95/assets/img/kiba/root.png)
+ ![shell](/assets/img/kiba/root.png)
 
 Now we can find root flag via: 
 

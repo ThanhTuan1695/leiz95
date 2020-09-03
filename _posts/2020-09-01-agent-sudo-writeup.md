@@ -63,12 +63,12 @@ Nmap done: 1 IP address (1 host up) scanned in 69.90 seconds
 
 Accessing to port 80 and got it:
 
-![web80](/leiz95/assets/img/agent-sudo/web.png)
+![web80](/assets/img/agent-sudo/web.png)
 
 Now we need to change user agent. there is few ways to do as using agent switch extension or burp suite to edit request.
 I am using burp to do it. I change User agent to agent R and got another hint:
 
-![web80](/leiz95/assets/img/agent-sudo/web1.png)
+![web80](/assets/img/agent-sudo/web1.png)
 
 That we are one of in 25 employees, So we can use burp intruder to manipulate user agent with 26 character.
 
@@ -76,7 +76,7 @@ After running burp intruder with 26 characters from A-Z payload, we was redirect
 
 In */agent_C_attention.php*
 
-![web80](/leiz95/assets/img/agent-sudo/web2.png)
+![web80](/assets/img/agent-sudo/web2.png)
 
 ## Hash cracking and brute-force
 
@@ -96,7 +96,7 @@ hydra -l chris -P password-list 10.10.10.203 ftp
 
 I am using rockyou.txt as password-list. Waiting for brute force:
 
-![web80](/leiz95/assets/img/agent-sudo/web3.png)
+![web80](/assets/img/agent-sudo/web3.png)
 
 we got password for **chris** user.
 
@@ -104,7 +104,7 @@ Then we access to mnachine via ftp of chris user.
 
 list all files that chris can view:
 
-![web80](/leiz95/assets/img/agent-sudo/web4.png)
+![web80](/assets/img/agent-sudo/web4.png)
 
 In order to get all files, we can use: 
 
@@ -127,12 +127,12 @@ Firstly, i can try steghide to check the jpg image. let see what is hide inside 
 
 Result: 
 
-![web80](/leiz95/assets/img/agent-sudo/web5.png)
+![web80](/assets/img/agent-sudo/web5.png)
 
 This require password phrase as saw above.
 Let's check cutie.png with binwalk. We got some hidden zip file inside file cuite.png
 
-![web80](/leiz95/assets/img/agent-sudo/web6.png)
+![web80](/assets/img/agent-sudo/web6.png)
 
 Extract the cutie.pnd and got 8702.zip file. But it was lockded by password. We need to crack password. After googling how to crack password for zip file.
 
@@ -144,11 +144,11 @@ I get amount of way. One way that i will use and also from the hint. There is tw
 
 Then archive the password:
 
-![web80](/leiz95/assets/img/agent-sudo/web7.png)
+![web80](/assets/img/agent-sudo/web7.png)
 
 Open zip file and enter password. We have message: 
 
-![web80](/leiz95/assets/img/agent-sudo/web8.png)
+![web80](/assets/img/agent-sudo/web8.png)
 
 Send to who we just got the encode person. Don't worry, we have the https://gchq.github.io/CyberChef/ to check or reverse it. After time to find what is type of encoded. I found this is base64 encoded. 
 
@@ -158,7 +158,7 @@ Now we have password for steghide in a few steps ago. Let's extract jpg image.
 
 Inside message.txt:
 
-![web80](/leiz95/assets/img/agent-sudo/web9.png)
+![web80](/assets/img/agent-sudo/web9.png)
 
 ## Capture the user flag
 
@@ -183,14 +183,14 @@ In order to getting root. First thing, i check sudoer file by running command:
 
 ``` sudo -l ```
 
-![web80](/leiz95/assets/img/agent-sudo/web10.png)
+![web80](/assets/img/agent-sudo/web10.png)
 
 
 It looks like our user is not allowed to run /bin/bash as root since we have a !root. However, this looks weird as the first all means our user can run /bin/bash as any user. This is interesting, perhaps we can find a way to exploit this. 
 
 Google about it: 
 
-![web80](/leiz95/assets/img/agent-sudo/web11.png)
+![web80](/assets/img/agent-sudo/web11.png)
 
 We got the cve and also exploitdb url.
 
@@ -200,6 +200,6 @@ Read throung the exploitDB and Run cmd to get root:
 
 The flag was sitting inside root directory.
 
-![web80](/leiz95/assets/img/agent-sudo/web12.png)
+![web80](/assets/img/agent-sudo/web12.png)
 
 Finally we got all plags. Happy hacking!!!

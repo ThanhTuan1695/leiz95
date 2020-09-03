@@ -33,23 +33,23 @@ Normally, i will use the rustscan as scan the host and gathering machine informa
 
 It will take few time to scan: 
 
-![gs1](/leiz95/assets/img/gs/gs1.png)
+![gs1](/assets/img/gs/gs1.png)
 
 We got 2 open ports. One port 22 is ssh port  and web server port is 80. After try to google some issue relate to shh version. There is no more thing interesting. 
 
 In port 80, i go throung all the tag in the page. In *about.html*, when i click on the button uploads, the server redirect to */uploads*.
 
-![gs1](/leiz95/assets/img/gs/gs2.png)
+![gs1](/assets/img/gs/gs2.png)
 
 There is 3 files. one is dict.list. I guess we can use it to cracking or brute-force somewhere. Just take all the file by download it.
 
 But the interesting thing that i change the extention to .php. The page turn on the upload function.
 
-![gs1](/leiz95/assets/img/gs/gs3.png)
+![gs1](/assets/img/gs/gs3.png)
 
 I looked source page. The Server accepts php file. 
 
-![gs1](/leiz95/assets/img/gs/gs4.png)
+![gs1](/assets/img/gs/gs4.png)
 
 Yeah, i try to upload php reverse shell via upload function. But i have no luck to upload this file. The server may error during upload even upload normal image. I have no clue now. 
 
@@ -57,7 +57,7 @@ I go back to gathering again by running dirsearch. you can get it here: https://
 
 After the dirsearch is done, i got another quite interesting enpoint which is *secret/*. Access to this enpoint, we got the secret key, 
 
-![gs1](/leiz95/assets/img/gs/gs5.png)
+![gs1](/assets/img/gs/gs5.png)
 
 I download the secretKey file and login to machine via ssh. But i don't know what is exact an username in the machine. I get back to main page for trying to find the username. Fortunately, in the source of main page. i got this comment line:
 
@@ -69,7 +69,7 @@ Then i use john as the username.
 
 But it requires passphrase. 
 
-![gs1](/leiz95/assets/img/gs/gs6.png)
+![gs1](/assets/img/gs/gs6.png)
 
 Now let use the *dict.lst* file to crack passphrase.
 
@@ -83,11 +83,11 @@ Firstly, we need to convert from ssh private key to john:
 
 Final, run john with *dict.lst* to crack the password.
 
-![gs1](/leiz95/assets/img/gs/gs7.png)
+![gs1](/assets/img/gs/gs7.png)
 
 Now access to machine with this password. 
 
-![gs1](/leiz95/assets/img/gs/gs7.png)
+![gs1](/assets/img/gs/gs7.png)
 
 
 Yeah, we got flag!!!
