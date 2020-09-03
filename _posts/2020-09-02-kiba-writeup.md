@@ -5,7 +5,7 @@ subtitle: Identify the critical security flaw in the data visualization dashboar
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/kiba/logo.png
 share-img: /assets/img/path.jpg
-tags: [ctf,tryhackme, writeup, kiba]
+tags: [ctf,tryhackme, writeup, kiba, Capabilities]
 ---
 
 Identify the critical security flaw in the data visualization dashboard, that allows execute remote code execution. Have Fun!
