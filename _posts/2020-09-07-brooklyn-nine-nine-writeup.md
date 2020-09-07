@@ -21,7 +21,8 @@ This room is aimed for beginner level hackers but anyone can try to hack this bo
 | Infor | This is a free room, which means anyone can deploy virtual machines in the room  | 
 
 
-## RUST SCAN, Enumeration and Gathering Information
+
+## RUSTSCAN, Enumeration and Gathering Information
 Normally, i will use the rustscan as scan the host and gathering machine information
 
 
