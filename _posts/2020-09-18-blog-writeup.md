@@ -175,5 +175,25 @@ find / -name '*.txt' 2>/dev/null
 
 you will see the hidden user flag in media.
 
+## Another way to get root
+
+instead of the Ghidra to revers the bin file. We can use ltrace tool to check logic of bin file or strings.
+
+Let use strings :
+```
+string /usr/sbin/checker
+```
+
+![gs1](/assets/img/blog/10.png)
+
+and use ltrace to check logic of file.
+
+```
+ltrace /usr/sbin/checker
+
+```
+![gs1](/assets/img/blog/11.png)
+
+because this is exploited already. tthat why admin here is not null.
 
 Happy hacking!!!
