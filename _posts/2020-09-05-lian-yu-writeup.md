@@ -5,7 +5,7 @@ subtitle: A beginner level security challenge
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/alianYu/logo.png
 share-img: /assets/img/path.jpg
-tags: [ctf,tryhackme, writeup, Lian_Yu, gobuster]
+tags: [ctf,tryhackme, writeup, Lian_Yu, gobuster, pkexec]
 ---
 
 Welcome to Lian_YU, this Arrowverse themed beginner CTF box! Capture the flags and have fun.

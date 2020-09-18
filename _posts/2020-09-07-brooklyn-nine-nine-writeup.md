@@ -3,9 +3,9 @@ layout: post
 title: BrookLyn Nine Nine writeup
 subtitle: This room is aimed for beginner level hackers but anyone can try to hack this box. There are two main intended ways to root the box.
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/alianYu/logo.png
+thumbnail-img: /assets/img/brook/logo.png
 share-img: /assets/img/path.jpg
-tags: [ctf,tryhackme, writeup, brooklyn-nine-nine, gobuster]
+tags: [ctf,tryhackme, writeup, brooklyn-nine-nine, gobuster, nano]
 ---
 
 This room is aimed for beginner level hackers but anyone can try to hack this box. There are two main intended ways to root the box. If you find more dm me in discord at Fsociety2006.
