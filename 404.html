@@ -131,7 +131,103 @@ permalink: /404.html
 </footer>
 <!-- End footer -->
 <script src="https://minishop.adpia.vn/js/minishop/adpia_minishop.js" type="text/javascript"></script>
-<script src="https://minishop.adpia.vn/js/minishop/store.js"></script>
+<script>
+  jQuery(document).ready(function($) {
+	$(window).scrollTop(0);
+	$(".adpia-header-menu").css('height', $(window).height());
+	var x = setTimeout(function() {
+		var owl = $('.wrap_slide_flash_sale .owl-carousel');
+		$('.customNextBtn').click(function() {
+			owl.trigger('next.owl.carousel');
+		});
+		$('.customPrevBtn').click(function() {
+			owl.trigger('prev.owl.carousel');
+		});
+	}, 5000);
+	$(".adpia-list-menu-mobile").css('top', $(".adpia-main-menu-box").height());
+});
+$(window).scroll(function(event) {
+	if(window.innerWidth > 1110) {
+		if($(window).scrollTop() >= 40) {
+			$(".adpia-main-menu").css({
+				'position': 'fixed',
+				'top': '0'
+			});
+			$(".adpia-main-menu-box").css('width', '100%');
+			$(".main-menu-drop-box").css('padding', '0 200px');
+		} else {
+			$(".adpia-main-menu").css({
+				'position': 'absolute',
+				'top': '40px',
+			});
+			$(".adpia-main-menu-box").css('width', '80%');
+			$(".main-menu-drop-box").css('padding', '0 50px');
+		}
+	}
+});
+
+function setFlashSaleCountdownValue(time) {
+	var x = setInterval(function() {
+
+		var now = new Date().getTime();
+
+		var distance = (time * 1000) - now;
+
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		if(distance < 0) {
+			clearInterval(x);
+			days = hours = minutes = seconds = 0;
+		}
+
+		$(".timer__part-value--days").html(days);
+		$(".timer__part-value--hours").html(hours);
+		$(".timer__part-value--minutes").html(minutes);
+		$(".timer__part-value--seconds").html(seconds);
+	}, 1000);
+}
+
+$(".adpia-main-menu-mobile-button-box > div").click(function(event) {
+	if(window.location.pathname.indexOf('store') >= 0) {
+		var customHeight = 350;
+	} else {
+		var customHeight = 200;
+	}
+	if($(".adpia-list-menu-mobile").css('opacity') == '0') {
+		$(".adpia-list-menu-mobile").animate({
+			opacity: 1,
+			height: customHeight
+		}, 500);
+	} else {
+		$(".adpia-list-menu-mobile").animate({
+			opacity: 0,
+			height: 0
+		}, 500);
+		closeMobileMenuDrop();
+	}
+});
+
+$(".adpia-list-menu-mobile a").click(function(event) {
+	$(".adpia-list-menu-mobile").animate({
+		opacity: 0,
+		height: 0
+	}, 500);
+	closeMobileMenuDrop();
+});
+
+function closeMobileMenuDrop() {
+	$(".arrow-menu-drop").attr('class', 'fa fa-caret-down arrow-menu-drop');
+	$(".list-cate-menu-mobile-drop").animate({
+		height: 0
+	}, 500);
+	$(".list-brand-menu-mobile-drop").animate({
+		height: 0
+	}, 500);
+}
+</script>
 <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
@@ -154,6 +250,6 @@ permalink: /404.html
 		window.location.href = url;
 	}
 </script>
-<script src="https://minishop.adpia.vn/js/minishop/adpia_minishop_default.js"></script>
+<!-- <script src="https://minishop.adpia.vn/js/minishop/adpia_minishop_default.js"></script>
 <script src="https://minishop.adpia.vn/js/minishop/adpia_minishop_data.js"></script>
-<script src="https://minishop.adpia.vn/js/minishop/adpia_minishop_coupon.js"></script>
+<script src="https://minishop.adpia.vn/js/minishop/adpia_minishop_coupon.js"></script> -->
