@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: giatot
 title: Voucher
 # permalink: /voucher
 ---
