@@ -1,5 +1,5 @@
 ---
-layout: giatot
+layout: default
 title: Voucher
 permalink: /voucher
 ---
