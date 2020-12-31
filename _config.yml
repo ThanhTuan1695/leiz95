@@ -14,8 +14,8 @@ navbar-links:
     # - Beautiful Jekyll: "https://beautifuljekyll.com"
     # - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: ""
-  Hot Sale: "/giatot"
-  Vouche: "/voucher"
+  Hot Sale: "giatot"
+  Vouche: "voucher"
 
 # --- Logo --- #
 
