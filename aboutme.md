@@ -12,7 +12,7 @@ My name is Tuan as nickname Leiz95 . I am working at mgm security partners. I am
 - I'm extremely love research and sharing about security
 - TryHackeme rank: [Public Profile](https://tryhackme.com/p/leiz95)
 
-    <script src="https://tryhackme.com/badge/16445"></script>
+<script src="https://tryhackme.com/badge/16445"></script>
 
 
 ### My Archive
