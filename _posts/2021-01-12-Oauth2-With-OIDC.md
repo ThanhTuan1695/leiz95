@@ -13,9 +13,9 @@ There is a lot of article writing about 0Auth2 and OIDC. Just list out what know
 This post is purpose for security research relate OIDC topic later.
 
 # Table of Content
-    1. What is 0Auth2? 
-    2. What is Open ID connect (OIDC)? 
-    3. What is the Open ID Connect provider (OP)? 
+1.What is 0Auth2? 
+2.What is Open ID connect (OIDC)? 
+3.What is the Open ID Connect provider (OP)? 
 
 ## 1. What is 0Auth2? 
 
@@ -25,8 +25,6 @@ The OAuth 2.0 authorization framework enables a third-party application to obtai
 #### 1.2. Basic Knownledge
 you can take a lot at this page. This is very detail in [Understanding OAuth2](http://www.bubblecode.net/en/2016/01/22/understanding-oauth2/)
 
-
-    
 ## 2. What is Open ID Connect (OIDC)? 
 
 #### 2.1. Definition
@@ -50,9 +48,14 @@ These two provider that was used by me so far.  If you have any OIDC provider, p
 In the next post, i am going to deeper in the keycloak provider. 
 
 ## Reference
-[Real life OIDC](https://security.lauritz-holtmann.de/post/sso-security-responsible-disclosure/)
-[The 0Auth2 Framwork](https://tools.ietf.org/html/rfc6749)
-[Thread Model and Security Considerations](https://tools.ietf.org/html/rfc6819)
-[0Auth2 Spec](https://www.oauth.com/oauth2-servers/map-oauth-2-0-specs/)
-[Open ID Connect](https://openid.net/connect/)
-[Open ID Connect course](https://curity.io/resources/courses/openid-connect-in-detail/overview-of-openid-connect)
+1.[Real life OIDC](https://security.lauritz-holtmann.de/post/sso-security-responsible-disclosure/)
+
+2.[The 0Auth2 Framwork](https://tools.ietf.org/html/rfc6749)
+
+3.[Thread Model and Security Considerations](https://tools.ietf.org/html/rfc6819)
+
+4.[0Auth2 Spec](https://www.oauth.com/oauth2-servers/map-oauth-2-0-specs/)
+
+5.[Open ID Connect](https://openid.net/connect/)
+
+6.[Open ID Connect course](https://curity.io/resources/courses/openid-connect-in-detail/overview-of-openid-connect)
