@@ -6,6 +6,11 @@ thumbnail-img: /assets/img/oauthandoidc.png
 tags: [research, OIDC, 0Auth, 0Auth2, Keycloak]
 # comments: true
 ---
+There is a lot of article writing about 0Auth2 and OIDC. Just list out what knowing so far.
+
+    Identity, Authentication + 0Auth = Open ID Connect. 
+
+This post is purpose for security research relate OIDC topic later.
 
 # Table of Content
 
