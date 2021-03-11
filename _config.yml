@@ -9,6 +9,9 @@ author: Leiz95
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  Archive: "Archive"
+    - penentration tester: "bughunter"
+    - CVE: "CVE"
   Hunting:
     - Hot Sale: "giatot"
     - Voucher: "voucher"
