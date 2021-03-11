@@ -9,12 +9,12 @@ author: Leiz95
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Archive:
-    - penentration tester: "bughunter"
-    - CVE: "CVE"
-  Hunting:
-    - Hot Sale: "giatot"
-    - Voucher: "voucher"
+  # Archive:
+  #   - penentration tester: "bughunter"
+  #   - CVE: "CVE"
+  # Hunting:
+  #   - Hot Sale: "giatot"
+  #   - Voucher: "voucher"
   About Me: "aboutme"
   Author's home: ""
 
