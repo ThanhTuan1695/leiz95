@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: Penetration testing, Bug Hunter.
 subtitle: Penetration tester,  Security Consultant and Researching
 permalink: /cve
