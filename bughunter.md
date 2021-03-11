@@ -2,6 +2,7 @@
 layout: page
 title: Penetration testing, Bug Hunter.
 subtitle: Penetration tester,  Security Consultant and Researching
+permalink: /bughunter
 ---
 
 My name is Tuan as nickname Leiz95 . I am working at mgm security partners. I am in Pentest and Product security fielf. I have the following qualities:
