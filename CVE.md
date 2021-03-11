@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 title: Penetration testing, Bug Hunter.
 subtitle: Penetration tester,  Security Consultant and Researching
 ---
