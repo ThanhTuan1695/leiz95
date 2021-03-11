@@ -10,7 +10,7 @@ author: Leiz95
 
 navbar-links:
   Archive:
-    - penentration tester: "bughunter"
+    - penentration tester: "bug-hunter"
     - CVE: "CVE"
   Hunting:
     - Hot Sale: "giatot"
