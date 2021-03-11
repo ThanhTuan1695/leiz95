@@ -15,7 +15,7 @@ My name is Tuan as nickname Leiz95 . I am working at mgm security partners. I am
 <script src="https://tryhackme.com/badge/16445"></script>
 
 
-### My Archive
+### My Goals
 
 - Get some certificate relate to security field.
 - I am on the way to get OSCP certificate.
