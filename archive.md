@@ -4,20 +4,17 @@ title: Cetificate and bug reported.
 subtitle: Penetration tester,  Security Consultant and Researching
 ---
 
-My name is Tuan as nickname Leiz95 . I am working at mgm security partners. I am in Pentest and Product security fielf. I have the following qualities:
 
+# My Knownlegde and Archivement
 
-### My Knownlegde and Archivement
-- I have good knowleged about security
-- I'm extremely love research and sharing about security
-- TryHackme rank: [Public Profile](https://tryhackme.com/p/leiz95)
+## TryHackMe
+-  rank: [Public Profile](https://tryhackme.com/p/leiz95)
 
 <script src="https://tryhackme.com/badge/16445"></script>
 
+![THM-AOC2020](/assets/img/THM-AOC2020.png)
 
-### My Goals
+![THM-AOC2020](/assets/img/THM-WF.png)
 
-- Get some certificate relate to security field.
-- I am on the way to get OSCP certificate.
 
- - if you have any question, i will answer **all** your questions.
+## Reported Stuff
