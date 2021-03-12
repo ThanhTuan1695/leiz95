@@ -17,7 +17,7 @@ My name is Tuan (aka Leiz95) . I am working at mgm security partners. I experien
 -  Have in-depth knowledge regarding OWASP TOP 10 security issues.
 -  Researched new threats, attack vectors, and risks.
 -  Gained in-depth knowledge about Security Threats, Security Technologies and Controls.
--  Applied Risk Analysis, Risk Management to analyze network and implement security controls in two projects.
+-  Applied Risk Analysis, Risk Management to analyze network and implement security controls in projects.
 
 ### My Goals
 
