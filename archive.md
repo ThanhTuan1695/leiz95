@@ -23,12 +23,12 @@ Ranked: [Public Profile](https://tryhackme.com/p/leiz95)
 ## Bug Reported
 
 Dorks: 
+
    https://cxsecurity.com/issue/WLB-2021020160
 
 CVE:
 
    ![THM-AOC2020](/assets/img/cve2021.png)
 
-Bug:
 
   
