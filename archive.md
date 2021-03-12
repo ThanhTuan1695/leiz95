@@ -8,7 +8,7 @@ subtitle: Penetration tester,  Security Consultant and Researching
 # My Knownlegde and Archivement
 
 ## TryHackMe
--  rank: [Public Profile](https://tryhackme.com/p/leiz95)
+Ranked: [Public Profile](https://tryhackme.com/p/leiz95)
 
 <script src="https://tryhackme.com/badge/16445"></script>
 
@@ -16,5 +16,14 @@ subtitle: Penetration tester,  Security Consultant and Researching
 
 ![THM-AOC2020](/assets/img/THM-WF.png)
 
+![THM-AOC2020](/assets/img/THM-BP.png)
 
-## Reported Stuff
+
+
+## Bug Reported
+
+Dorks: 
+-   https://cxsecurity.com/issue/WLB-2021020160
+
+CVE:
+-   ![THM-AOC2020](/assets/img/cve2021.png)
