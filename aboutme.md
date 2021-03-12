@@ -4,7 +4,7 @@ title: About me
 subtitle: Penetration tester,  Security Consultant and Researching
 ---
 
-My name is Tuan as nickname Leiz95 . I am working at mgm security partners. I experience in Cyber Security and Bug Bounty with focus on Web/App security pentesting. I have the following qualities:
+My name is Tuan (aka Leiz95) . I am working at mgm security partners. I experience in Cyber Security and Bug Bounty with focus on Web/App security pentesting. I have the following qualities:
 
 
 ### Job currently
