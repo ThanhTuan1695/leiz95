@@ -54,6 +54,14 @@ This PenTest+ pathway allows individuals to practice the majority of practical s
     Post exploitation techniques (with Powerview, Bloodhound and Mimikatz)
     CompTIA PenTest+ is for cybersecurity professionals tasked with penetration testing and vulnerability management.
 
+![THM-AOC2020](https://tryhackme.com/leiz95/badges/pentestingtools)
+![THM-AOC2020](https://tryhackme.com/leiz95/badges/owasp-10)
+![THM-AOC2020](https://tryhackme.com/leiz95/badges/metasploitable)
+![THM-AOC2020](https://tryhackme.com/leiz95/badges/web-fund)
+![THM-AOC2020](https://tryhackme.com/leiz95/badges/ohsint)
+![THM-AOC2020](https://tryhackme.com/leiz95/badges/burped)
+![THM-AOC2020](https://tryhackme.com/leiz95/badges/mr-robot)
+
 
 ## Bug Reported
 
