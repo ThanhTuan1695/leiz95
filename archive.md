@@ -63,7 +63,7 @@ Dorks:
 
 CVE:
 
-    ![THM-AOC2020](/assets/img/cve2021.png)
+![THM-AOC2020](/assets/img/cve2021.png)
 
     https://access.redhat.com/security/cve/cve-2021-20262/details=6
 
