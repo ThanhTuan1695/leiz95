@@ -80,5 +80,3 @@ CVE:
 
 [tuan-anh-review](/assets/img/review-tuan-anh.pdf)
 
-
-  
