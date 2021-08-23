@@ -71,4 +71,14 @@ CVE:
     https://bugzilla.redhat.com/show_bug.cgi?id=1933639#c4
 
 
+## Review Trainning
+
+
+[tuan-review](/assets/img/Review-tuan.pdf)
+
+[son-review](/assets/img/Review-Trainning.pdf)
+
+[tuan-anh-review](/assets/img/review-tuan-anh.pdf)
+
+
   
