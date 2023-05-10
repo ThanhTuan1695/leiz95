@@ -488,7 +488,7 @@ footer .footer-custom-content {
   height: 12rem;
   width: 12rem;
   margin-top: -2.1875rem;
-  filter: grayscale(90%);
+  /* filter: grayscale(90%); */
 }
 .post-image:hover {
   filter: grayscale(0%);
