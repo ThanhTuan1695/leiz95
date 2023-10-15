@@ -1,18 +1,15 @@
-
-# lời dẫn cho Werkzeug
-
 # Werkzeug là gì và cách dùng của werkzeug
-https://github.com/ThanhTuan1695/boot2root3/blob/minh/Minh's%20Report/KeyGen%20Werkzeug%20Debugger%20Console%20Pin%20%2B%20LFI%20(Part%201%20-%20Rewrite).md
 
-# Cơ chế bảo vệ của Werkzeug?
+https://github.com/williamdunbar/Dunbar-Magazine/blob/master/KeyGen%20Werkzeug%20Debugger%20Console%20Pin%20(Part%201).md
 
-https://github.com/ThanhTuan1695/boot2root3/blob/minh/Minh's%20Report/KeyGen%20Werkzeug%20Debugger%20Console%20Pin%20(Part%202).md#1-werkzeug-debugger-ta%CC%A3o-ra-ma%CC%83-pin-nh%C6%B0-th%C3%AA%CC%81-na%CC%80o-
+# Cơ chế bảo vệ của Werkzeug tránh khỏi ?
 
+https://github.com/williamdunbar/Dunbar-Magazine/blob/master/KeyGen%20Werkzeug%20Debugger%20Console%20Pin%20(Part%202).md
 Với chỉ mỗi pin thì có thực sự bảo vệ khỏi các kẻ tấn công được hay không? 
-Ở đây mình sẽ hiển nhiên không bàn đến việc đã tắt debug, Nhưng trong thực tế thì có rất nhiều chương trình chạy trên môi trường production mà quên tắt tính năng debug. 
+Ở đây hiển nhiên không bàn đến việc đã tắt debug, Nhưng trong thực tế thì có rất nhiều chương trình chạy trên môi trường production mà quên tắt tính năng debug. 
 Vậy thì trường hợp đó xảy ra thì attack có thể làm gì để lấy được pin.
 
-file:///C:/Users/Bounty%20Startup/Downloads/v2Werkzeug_PIN_exploit.pdf
+https://github.com/thng01/CyberResearch/blob/main/Web/Werkzeug%20PIN%20Exploit/(v2)Werkzeug%20PIN%20exploit.pdf
 
 # Sự khác nhau của cơ chế tạo pin werkzeug giữa Flask và Django
 
